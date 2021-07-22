@@ -11,11 +11,11 @@ var aneObj = function(){
 	this.amp=[];
 }
 
-aneObj.prototype.num=50;
+aneObj.prototype.num=120;
 aneObj.prototype.init=function(){
 
 	for(var i=0;i<this.num;i++){
-		this.rootx[i] = i*16+Math.random()*20;
+		this.rootx[i] = Math.random()*canWidth;
 		this.headx[i] = this.rootx[i];
 		this.heady[i] = canHeight-200+Math.random()*50;
 		this.amp[i] = Math.random()*50+50;

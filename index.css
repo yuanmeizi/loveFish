@@ -1,16 +1,16 @@
-body {
-  padding-top: 10px;
+html,body {
+  margin: 0;
+  padding: 0px;
 }
 .all_bg {
-  width: 800px;
-  height: 600px;
+  height: 100vh;
   margin: 0px auto;
 }
 .all_bg #allcanvas {
   position: relative;
-  width: 800px;
-  height: 600px;
+  height: 100%;
   margin: 0px;
+  padding: 0;
 }
 .all_bg #allcanvas #canvas1 {
   position: absolute;

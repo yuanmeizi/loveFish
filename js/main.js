@@ -1,7 +1,7 @@
 var can1,can2,ctx1,ctx2;
 var lastTime,deltaTime;
 var bgPic = new Image();
-var canWidth,canHeight;
+var canWidth=window.innerWidth,canHeight=window.innerHeight;
 var ane,fruit,mom,baby;
 var mx,my;
 var babyTail=[];
@@ -34,8 +34,11 @@ function init(){
 	ctx1 = can1.getContext("2d");
 	ctx2 = can2.getContext("2d");
 	bgPic.src = "./src/background.jpg"
-	canWidth = can1.width;
-	canHeight = can1.height;
+
+	can1.width=canWidth;
+	can1.height=canHeight;
+	can2.width=canWidth;
+	can2.height=canHeight;
 
 	can1.addEventListener("mousemove",onMouseMove,false);
 
